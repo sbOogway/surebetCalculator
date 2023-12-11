@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>surebet calculator</title>
+		<style>
+			th, td {
+				padding: 15px;
+			}
+			input {
+				width: 100px;
+				height: 50px;
+				align-items: center;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th></th>
+				<th>odds</th>
+				<th>stake</th>
+				<th>result</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td><input type="number" id="odd1" name="odd1" step="0.01" min="1.01" value="2.01"></td>
+				<td><input type="number" name="stake1" value="10.00"></td>
+				<td><span></span></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><input type="number" id="odd2" name="odd2" step="0.01" min="1.01" value="2.01"></td>
+				<td><input type="number" name="stake2" value="10.00"></td>
+				<td><span></span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="number" id="stake" name="total stake" value="100.00"></td>
+				<td></td>
+
+			</tr>
+			<tr>
+				<td>stake_step</td>
+				<td><input type="number" id="step" name="" step="0.1" value="0.1"></td>
+				<td></td>
+				<td></td>
+
+			</tr>
+		</table>		
+		<script>
+			var stake = document.getElementById("stake")
+			var odd1 = document.getElementById("odd1")
+			var odd2 = document.getElementById("odd2")
+			console.log(stake.value, odd1.value, odd2.value)
+		</script>
+	</body>	
+</html>
